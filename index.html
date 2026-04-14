@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="geo.region" content="AR-B">
+    <meta name="geo.placename" content="Pilar">
+    <meta name="geo.position" content="-34.466;-58.915">
+    <meta name="ICBM" content="-34.466, -58.915">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Herrería en Zona Norte | Rejas, Portones y Parrillas a Medida</title>
+
+  <meta name="description" content="Herrería a medida. Fabricación de rejas, portones, parrillas, braseros, pérgolas y estructuras metálicas en zona norte.">
+
+  <meta name="keywords" content="herrería, rejas, portones, parrillas, braseros, estructuras metálicas, pergolas, escaleras, hierro a medida">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #000;
+      border-bottom: 2px solid #f0b90b;
+      padding: 15px;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #f0b90b;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f0b90b;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/hero.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 26px;
+      background: #f0b90b;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #ffd84d;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h3 {
+      text-align: center;
+      color: #f0b90b;
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ccc;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #2a2a2a;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #f0b90b;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h4 {
+      padding: 12px;
+      text-align: center;
+    }
+
+    #por-que .grid .card h4 {
+      font-size: 14px;
+    }
+
+    #contacto {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      border-top: 2px solid #f0b90b;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      padding: 14px 16px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  animation: pulse 1.8s infinite;
+}
+
+/* icono */
+.whatsapp-float .wa-icon {
+  font-size: 20px;
+}
+
+/* texto */
+.whatsapp-float .wa-text {
+  display: inline-block;
+}
+
+/* hover */
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  background: #2fff7a;
+}
+
+/* animación de pulso */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+    @media (max-width: 768px) {
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .hero {
+    padding: 60px 15px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  .card img {
+    height: 160px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .whatsapp-float {
+    padding: 12px;
+  }
+
+  .whatsapp-float .wa-text {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Herrería Pepin</h1>
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#por-que">Por qué elegirnos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Proyectos en hierro</h2>
+  <p>Rejas, portones, puertas y estructuras</p>
+  <a class="btn" href="https://wa.me/549XXXXXXXXXX">Pedir presupuesto ahora</a>
+</section>
+
+<section id="productos">
+  <h3>Productos</h3>
+  <p class="intro">Fabricamos productos de hierro resistentes y funcionales</p>
+  <div class="grid">
+    <div class="card"><img src="images/parrilla.jpg"><h4>Parrillas</h4></div>
+    <div class="card"><img src="images/brasero.jpg"><h4>Braseros</h4></div>
+    <div class="card"><img src="images/disco.jpg"><h4>Discos de arado</h4></div>
+    <div class="card"><img src="images/asador.jpg"><h4>Asadores</h4></div>
+  </div>
+</section>
+
+<section id="servicios">
+  <h3>Trabajos a medida</h3>
+  <p class="intro">Soluciones en hierro según necesidad del cliente</p>
+  <div class="grid">
+    <div class="card"><img src="images/porton.jpg"><h4>Portones</h4></div>
+    <div class="card"><img src="images/reja.jpg"><h4>Rejas</h4></div>
+    <div class="card"><img src="images/pergola.jpg"><h4>Pérgolas</h4></div>
+    <div class="card"><img src="images/escalera.jpg"><h4>Escaleras</h4></div>
+  </div>
+</section>
+
+<section id="por-que">
+  <h3>¿Por qué elegirnos?</h3>
+  <div class="grid">
+    <div class="card"><h4>✔ Trabajo prolijo</h4></div>
+    <div class="card"><h4>✔ Materiales resistentes</h4></div>
+    <div class="card"><h4>✔ Hecho a medida</h4></div>
+    <div class="card"><h4>✔ Responsabilidad en entrega</h4></div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h3>Contacto</h3>
+
+  <p class="intro">
+    Respondemos rápido por WhatsApp y hacemos presupuestos sin compromiso
+  </p>
+
+  <a class="btn" href="https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20consultar%20por%20un%20trabajo%20de%20herrería">
+    Pedir presupuesto por WhatsApp
+  </a>
+
+  <div style="margin-top:30px;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d822.5980460343632!2d-58.7913182!3d-34.442191199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9fb987005c79%3A0x49d0082e616aed11!2sPepin!5e0!3m2!1ses!2sar!4v1776143999481!5m2!1ses!2sar"
+      width="60%" 
+      height="350" 
+      style="border:0; border-radius:10px; margin-top:20px;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<a class="whatsapp-float" href="https://wa.me/5491167057917?text=Hola,%20quiero%20consultar%20por%20un%20trabajo%20de%20herrería" target="_blank">
+  <span class="wa-icon">💬</span>
+  <span class="wa-text">WhatsApp</span>
+</a>
+
+<footer>
+  <p>&copy; 2026 Herrería pepin todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
